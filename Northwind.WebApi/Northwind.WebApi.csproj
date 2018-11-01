@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Northwind.BusinessLogic\Northwind.BusinessLogic.csproj" />
+    <ProjectReference Include="..\Northwind.DataAccess\Northwind.DataAccess.csproj" />
+    <ProjectReference Include="..\Northwind.UnitOfWork\Northwind.UnitOfWork.csproj" />
+  </ItemGroup>
+
+</Project>
