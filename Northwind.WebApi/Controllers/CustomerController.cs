@@ -13,6 +13,7 @@ namespace Northwind.WebApi.Controllers
         public CustomerController(ICustomerLogic logic)
         {
             _logic = logic;
+
         }
 
         [HttpGet]
